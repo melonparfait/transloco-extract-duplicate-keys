@@ -1,0 +1,9 @@
+<div>
+    <h1>{{title}}</h1>
+
+    <ng-container *transloco="let t; read: 'nested'">
+        <!-- t(comment1, comment2) -->
+        <p >{{ t(title) }}</p>
+    </ng-container>
+</div>
+      
